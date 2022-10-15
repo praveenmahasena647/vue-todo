@@ -61,7 +61,7 @@ async function deleteAll() {
 
 <template>
     <form @submit.prevent="addtodo">
-        <input v-model="todoAct" required placeholder="Activity" />
+        <input v-model.trim="todoAct" required placeholder="Activity" />
         <button>submit</button>
     </form>
     <div>
